@@ -62,6 +62,7 @@ const FinalCTA: React.FC<FinalCTAProps> = ({ isDark = true }) => {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
                 {/* Primary Button - Same styling as Pricing CTA */}
+                <a href="/contact-us#contact-form">
                 <button
                   onMouseEnter={() => setHoveredButton('primary')}
                   onMouseLeave={() => setHoveredButton(null)}
@@ -72,6 +73,7 @@ const FinalCTA: React.FC<FinalCTAProps> = ({ isDark = true }) => {
                     hoveredButton === 'primary' ? 'translate-x-1' : ''
                   }`} />
                 </button>
+                </a>
 
                 {/* Secondary Button */}
                 <button

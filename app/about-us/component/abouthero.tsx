@@ -44,7 +44,7 @@ const AboutHero: React.FC<AboutHeroProps> = ({ isDark = true }) => {
   ];
 
   return (
-    <section className={`relative py-16 md:py-24 lg:py-32 overflow-hidden ${isDark ? 'bg-slate-950' : 'bg-white'}`}>
+    <section className={`relative py-14 md:py-18 lg:py-22 overflow-hidden ${isDark ? 'bg-slate-950' : 'bg-white'}`}>
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Gradient Orbs */}

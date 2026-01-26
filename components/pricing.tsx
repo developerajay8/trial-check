@@ -2,6 +2,7 @@
 "use client";
 import React, { useState } from 'react';
 import { Check, Zap, Crown, Rocket, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 interface PricingProps {
   isDark: boolean;
@@ -195,6 +196,7 @@ const Pricing: React.FC<PricingProps> = ({ isDark }) => {
                     </div>
 
                     {/* CTA Button */}
+                    <Link href={"/contact-us#contact-form"}>
                     <button className={`w-full py-3.5 rounded-xl font-medium transition-all duration-300 flex items-center justify-center gap-2 group/btn ${
                       plan.popular
                         ? `bg-gradient-to-r ${plan.gradient} text-white shadow-lg hover:shadow-xl hover:scale-105`
@@ -207,6 +209,7 @@ const Pricing: React.FC<PricingProps> = ({ isDark }) => {
                         isHovered ? 'translate-x-1' : ''
                       }`} />
                     </button>
+                    </Link>
 
                     {/* Features */}
                     <div className="mt-8 space-y-4">

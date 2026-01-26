@@ -78,14 +78,14 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
             </Link>
 
             <Link
-              href="/resources"
+              href="/contact-us"
               className={`text-sm ${
                 isDark
                   ? "text-gray-300 hover:text-white"
                   : "text-gray-600 hover:text-gray-900"
               } transition-colors`}
             >
-              Resources
+              Contact-us
             </Link>
           </div>
 
@@ -119,7 +119,7 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
             </Link>
 
             <Link
-              href="/signup"
+              href="/contact-us#contact-form"
               className="px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white text-sm rounded-lg transition-colors"
             >
               Try it now
@@ -183,6 +183,18 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
               } transition-colors`}
             >
               About Us
+            </Link>
+
+            <Link
+              href="/contact-us"
+              onClick={() => setMobileMenuOpen(false)}
+              className={`block py-2 text-sm ${
+                isDark
+                  ? "text-gray-300 hover:text-white"
+                  : "text-gray-600 hover:text-gray-900"
+              } transition-colors`}
+            >
+              Contact US
             </Link>
 
             <Link

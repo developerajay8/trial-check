@@ -1,9 +1,11 @@
 "use client";
 import React, { useState } from 'react';
-import AboutHero from './component/abouthero';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
-import FinalCTA from '@/components/finalcta';
+import Herocontact from './component/herocontact';
+import ContactForm from './component/contactform';
+import FAQs from './component/faqs';
+import SupportEmail from './component/supportemail';
 
 const Page = () => {
        const [isDark, setIsDark] = useState<boolean>(true);
@@ -11,8 +13,10 @@ const Page = () => {
     return (
         <div>
       <Header isDark={isDark} toggleTheme={() => setIsDark(!isDark)}/>
-            <AboutHero isDark={isDark}/>
-            <FinalCTA isDark={isDark}/>
+            <Herocontact isDark={isDark}/>
+            <ContactForm isDark={isDark}/>
+            <SupportEmail isDark={isDark}/>
+            <FAQs isDark={isDark}/>
             <Footer isDark={isDark}/>
         </div>
     );

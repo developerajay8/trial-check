@@ -1,8 +1,9 @@
 "use client";
 import React, { useState } from 'react';
-import AboutHero from './component/abouthero';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import Heropricing from './component/heropricing';
+import Pricing from '@/components/pricing';
 import FinalCTA from '@/components/finalcta';
 
 const Page = () => {
@@ -11,7 +12,8 @@ const Page = () => {
     return (
         <div>
       <Header isDark={isDark} toggleTheme={() => setIsDark(!isDark)}/>
-            <AboutHero isDark={isDark}/>
+            <Heropricing isDark={isDark}/>
+            <Pricing isDark={isDark}/>
             <FinalCTA isDark={isDark}/>
             <Footer isDark={isDark}/>
         </div>
